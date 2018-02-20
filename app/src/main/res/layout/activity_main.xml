@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="@color/green"
+    android:scrollbars="none"
+    tools:context="com.teamhexcode.quizapp.MainActivity">
+
+    <RelativeLayout
+
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+           <TextView
+               android:layout_marginTop="8dp"
+               android:layout_centerHorizontal="true"
+               android:id="@+id/title"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Quiz App"
+               android:textSize="25sp" />
+
+        <RelativeLayout
+            android:id="@id/r1"
+            android:layout_below="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/c1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/question1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1. In which year of First World War Germany declared war on Russia and France?"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/option1"
+                        android:text="A. 	1914"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/option2"
+                        android:text="B. 	1915"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:id="@+id/option3"
+                        android:text="C. 	1916"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/option4"
+                        android:text="D. 	1917"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                   <!-- <at.blogc.android.views.ExpandableTextView
+                        android:id="@+id/expandableTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Answer: Option A
+                                      Explanation:
+                                      No answer description available for this question"
+                        android:maxLines="5"
+                        android:ellipsize="end"
+                        app:animation_duration="750"/>
+
+                    &lt;!&ndash; Optional parameter animation_duration: sets the duration of the expand animation &ndash;&gt;
+
+                    <Button
+                        android:id="@+id/button_toggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Answer"/>-->
+
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <at.blogc.android.views.ExpandableTextView
+                            android:id="@+id/expandableTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dummy_text1"
+                            android:maxLines="0"
+                            android:ellipsize="end"
+                            app:animation_duration="750"/>
+
+                        <!-- Optional parameter animation_duration: sets the duration of the expand animation -->
+
+                        <Button
+                            android:id="@+id/button_toggle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/expand"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</ScrollView>
